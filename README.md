@@ -1,8 +1,6 @@
 # Pod's Bot v1.0
 
-## Token
-
-To attach the program to the bot, paste your bot's token into token.txt
+(ADD POD'S BOT TO YOUR SERVER)[https://discord.com/oauth2/authorize?client_id=773889464094556160&permissions=8&scope=bot]
 
 ## Commands
 
@@ -85,3 +83,7 @@ Changes the prefix.
 ```
 ;changeprefix <PREFIX>
 ```
+
+## Token
+
+To attach the program to the bot, paste your bot's token into token.txt

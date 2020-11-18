@@ -20,16 +20,19 @@ class Moderation(commands.Cog):
     # Commands
 
     @commands.command()
+    @commands.has_permissions(kick_members=True)
     async def kick(self, ctx, member : discord.Member, *, reason=None):
         await member.kick(reason=reason)
         await ctx.send(f'{member.mention} has been kicked.')
 
     @commands.command()
+    @commands.has_permissions(ban_members=True)
     async def ban(self, ctx, member : discord.Member, *, reason=None):
         await member.ban(reason=reason)
         await ctx.send(f'{member.mention} has been banned.')
 
     @commands.command()
+    @commands.has_permissions(ban_members=True)
     async def unban(self, ctx, *, member):
         banned_users = await ctx.guild.bans()
         member_name, member_tag = member.split('#')
@@ -43,6 +46,7 @@ class Moderation(commands.Cog):
                 return
 
     @commands.command(aliases=['purge'])
+    @commands.has_permissions(manage_messages=True)
     async def clear(self, ctx, amount=5):
         await ctx.channel.purge(limit=amount + 1)
 
