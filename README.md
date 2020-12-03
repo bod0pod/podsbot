@@ -1,6 +1,6 @@
-# Pod's Bot v1.0
+# Pod's Bot v1.1
 
-(ADD POD'S BOT TO YOUR SERVER)[https://discord.com/oauth2/authorize?client_id=773889464094556160&permissions=8&scope=bot]
+[ADD POD'S BOT TO YOUR SERVER](https://discord.com/oauth2/authorize?client_id=773889464094556160&permissions=8&scope=bot)
 
 ## Commands
 
